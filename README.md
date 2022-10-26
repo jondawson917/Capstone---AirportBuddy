@@ -11,4 +11,6 @@ BING MAPS API - https://www.microsoft.com/en-us/maps/choose-your-bing-maps-api (
 
 Include the API key in data.py
 
+-----------------------------------------------------
 "flask run" in root folder to run app.py local server
+-----------------------------------------------------
