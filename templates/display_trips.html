@@ -1,0 +1,53 @@
+{% extends 'base.html' %} {% block links %}
+<link rel="shortcut icon" href="../../static/favicon.ico" />
+<link href="../static/carousel.css" rel="carousel" />
+
+<title>Airport Buddy</title>
+<!-- Bootstrap core CSS -->
+<link href="../static/stylesheets/bootstrap.css" rel="stylesheet" />
+<link href="../static/stylesheets/cover.css" rel="stylesheet" />
+{% endblock %} {% block title %}
+<div class="cover-container">
+  <h3 class="masthead-brand">Trips</h3>
+  {% endblock %} {% block img %}
+  <img src="../static/images/tarmac.jpg" style="width: 100%" /> {% endblock %}
+  {% block content %}
+
+  <table class="table table-bordered table-striped" style="margin-top: 30px">
+    <thead class="thead dark">
+      <th scope="col">Trip Name</th>
+      <th scope="col">Transport Mode</th>
+      <th scope="col">Baggage</th>
+      <th scope="col">Destination</th>
+      <th scope="col">Takeoff Time</th>
+      <th scope="col">Airport Code</th>
+      <th scope="col">Passenger Count</th>
+      <th scope="col">Delete Trip</th>
+      <!-- Add total time to travel to airport-->
+    </thead>
+    <tbody>
+      {% for trip in trips %}
+      <tr>
+        <td>
+          {%if trip.name %} {{trip.name}} <br />
+          <b><a href="Trips/{{trip.id}}/update">Update</a></b> {% endif %}
+        </td>
+        <td>{{trip.transport_mode}}</td>
+
+        <td>{{trip.get_baggage()|length}} Bags</td>
+        <td>{%if trip.destination %} {{trip.destination}} {% endif %}</td>
+        <td>{{trip.takeoff_time}}</td>
+        <td>{{trip.airport_code}}</td>
+        <td>{{trip.get_passenger_count()}}</td>
+        <td>
+          <form method="POST" action="/Trips/{{trip.id}}/delete">
+            <input type="submit" value="Delete "class="btn btn-danger"></input>
+          </form>
+        </td>
+      </tr>
+      {%endfor%}
+    </tbody>
+  </table>
+
+  {% endblock %}
+</div>

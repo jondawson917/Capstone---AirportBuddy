@@ -1,0 +1,18 @@
+{% extends 'base.html' %} {% block links %}
+<link rel="shortcut icon" href="../../static/favicon.ico" />
+<link href="../../static/carousel.css" rel="carousel" />
+
+<title>Airport Buddy</title>
+<!-- Bootstrap core CSS -->
+<link href="../../static/stylesheets/bootstrap.css" rel="stylesheet" />
+<link href="../../static/stylesheets/cover.css" rel="stylesheet" />{% endblock
+%}
+{%block title %}<div class="cover-container"><h3 class="masthead-brand">{%if trip.name %} {{trip.name}} {% else %} NoName {% endif %}</h3>{% endblock %}
+{% block img %}<img src="../../static/images/edit.jpg" style="width: 100%" /> {% endblock %} 
+{% block content %}
+<form method="POST" style="width: 70%; margin-top: 20px; margin-left: 110px; border: 4px solid whitesmoke; background-color: rgba(2, 4, 5, 0.322);">
+  {% include "_form.html" %}
+  <button class="btn btn-primary" type="submit">Edit Trip Details</button><br/>
+</form>
+
+{% endblock %}

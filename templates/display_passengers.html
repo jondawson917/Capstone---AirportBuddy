@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% block links %}
+<link rel="shortcut icon" href="../../static/favicon.ico" />
+<link href="../../static/carousel.css" rel="carousel" />
+
+<title>Airport Buddy</title>
+<!-- Bootstrap core CSS -->
+<link href="../../static/stylesheets/bootstrap.css" rel="stylesheet" />
+<link href="../../static/stylesheets/cover.css" rel="stylesheet" />
+{% endblock %}
+
+
+{% block title %}
+<div class="cover-container"><h3 class="masthead-brand" >Passengers</h3>  
+{% endblock %}
+
+{% block img %} 
+<img src="../static/images/passengers-2.jpg" style="width: 650px;"> 
+{% endblock %} 
+
+{% block content %}
+
+<table class="table table-dark table-bordered table-striped" style="margin-top: 30px;">
+  <thead class="thead dark">
+    <th scope="col">Passenger Name</th>
+    <th scope="col">TSA Security Time</th>
+    <th scope="col">Destination</th>
+    <th scope="col">Takeoff Time</th>
+    <th scope="col">Add/Edit bags (Number of Bags)</th>
+    <th scope="col">Total commute time to boarding gate</th>
+    <th scope="col">Remove Passenger from Trip</th>
+  </thead>
+  <tbody>
+    {% for passenger in passengers %}
+    <tr>
+      <td>{{passenger.full_name()}} <br><b><a href="/Passenger/{{passenger.id}}/update">Update</a></b>
+        {% if passenger.disabled %}
+        <img src="../static/images/wheelchair.png" style="width: 50px; text-align:center;">
+        {% endif %}</td>
+      {%if passenger.trip.get_airport_info()['error']%} <td>Wait Time Not Available</td> {% else %}
+      <td>{{passenger.trip.security_time}} Minutes</td> {% endif %}
+      <td>{{passenger.trip.destination}}</td>
+      <td>{{passenger.trip.takeoff_time}}</td>
+      <td><a href="/Baggage/{{passenger.id}}/update"><b><u>Qty: ({{passenger.bag_count()|length}})</u></b><br/><p>Add/Edit</p></td>
+        <td>{{(passenger.commute_time())}}</td>
+        <td><form method="POST" action="/Passenger/{{passenger.id}}/delete">
+          <input type="submit" value="Delete "class="btn btn-danger"></input>
+        </form></td>
+        
+    </tr>
+    {%endfor%}
+  </tbody>
+</table>
+
+{% endblock %}

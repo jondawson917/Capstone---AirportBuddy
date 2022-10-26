@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block img %} 
+<img src="../static/images/plan.jpg" style="width: 700px">
+{% endblock %} 
+{% block links %}
+<link rel="shortcut icon" href="../../static/favicon.ico" />
+<link href="./static/carousel.css" rel="carousel" />
+
+<title>Airport Buddy</title>
+<!-- Bootstrap core CSS -->
+<link href="./static/stylesheets/bootstrap.css" rel="stylesheet" />
+<link href="./static/stylesheets/cover.css" rel="stylesheet" />
+{% endblock %}
+{% block content %}
+
+<div class="inner cover">
+    <h1 class="cover-heading">Airport Trip Planner</h1>
+    <p class="lead">
+      Estimate door-to-door travel time from your house to the plane. Customize your trip by entering the passenger, baggage, and trip information.
+    </p>
+    <p class="lead">
+      <a href="/Trips/new" class="btn btn-lg btn-default">New Trip</a>
+    </p>
+  </div>
+  {% endblock %}

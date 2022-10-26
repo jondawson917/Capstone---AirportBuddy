@@ -1,0 +1,32 @@
+{% extends 'base.html' %} 
+
+{% block links %}
+<link rel="shortcut icon" href="../static/favicon.ico" />
+<link href="../static/carousel.css" rel="carousel" />
+
+<title>Airport Buddy</title>
+<!-- Bootstrap core CSS -->
+<link href="../static/stylesheets/bootstrap.css" rel="stylesheet" />
+<link href="../static/stylesheets/cover.css" rel="stylesheet" />
+{% endblock %} 
+{% block img %}
+<img src="../static/images/tarmac.jpg" style="width: 700px" />
+{% endblock %} {% block content %}
+<p style="margin-top: 50px;">
+  First, please sign up for two API Keys (Bing Maps and TSA Wait Times). Then,
+  enter the keys below to continue with the trip planner.
+</p>
+<form action="/authorize" method="POST">
+    <div class="input-group-prepend">
+  <p>Sign up for a free API Key on the following links. Enter API Keys below:</p>
+
+  <a href="https://www.tsawaittimes.com/myaccount/signin" target="_blank"
+    >TSA Wait Times:</a
+  >
+  <input class="form-control-sm" type="text" placeholder="TSA Wait Times API Key" name="TSA" /><br />
+  <a href="https://www.bingmapsportal.com/" target="_blank">BING Maps:</a>
+  <input class="form-control-sm" type="text" placeholder="BING Maps API Key" name="BING" /><br />
+  <button value="Enter" style="color: black">Enter</button>
+</div>
+</form>
+{% endblock %}

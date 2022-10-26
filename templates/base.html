@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="../static/favicon.ico" />
+    <script src="https://unpkg.com/jquery"></script>
+    <script src="https://unpkg.com/popper"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+          var url = window.location;
+          $('ul.nav a[href="'+ url +'"]').parent().addClass('active');
+          $('ul.nav a').filter(function() {
+               return this.href == url;
+          }).parent().addClass('active');
+      });
+  </script> 
+    {% block links %} {% endblock %}
+    
+  </head>
+
+  <body class="{% block body_class %}{% endblock %}">
+    <nav>
+      <ul class="nav masthead-nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/Trips">Trips</a></li>
+        <li><a href="/Passengers">Passengers</a></li>
+        <li><a href="/Baggage">Baggage Claim</a></li>
+        
+      </ul>
+    </nav>
+    <div class="site-wrapper">
+      <div class="site-wrapper-inner" style="vertical-align: top;">
+        {% block title%} {% endblock %}
+        
+          {% block img %} {% endblock %}
+          <div class="masthead clearfix">
+          </div>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"> </script>
+    <script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/popper.min.js"></script>
+    <script src="../static/carousel.js"></script>
+    {% block content %}
+    {% endblock %}
+ 
+  </body>
+</html>
