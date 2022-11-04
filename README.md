@@ -9,11 +9,11 @@ TSA WAIT TIMES API - https://www.tsawaittimes.com/api (7 DAY EXPIRATION)
 
 BING MAPS API - https://www.microsoft.com/en-us/maps/choose-your-bing-maps-api (NO EXPIRATION)
 
-Include the API key in data.py
--> data.py includes functions get_airport_info, get_data and get_commute_time to retrieve the following:
--home coordinates
--airport coordinates
--commute time in seconds
------------------------------------------------------
-"flask run" in root folder to run app.py local server
------------------------------------------------------
+##Include the API key in data.py
+###-> data.py includes functions get_airport_info, get_data and get_commute_time to retrieve the following:
+###-home coordinates
+###-airport coordinates
+###-commute time in seconds
+###-----------------------------------------------------
+###"flask run" in root folder to run app.py local server
+###-----------------------------------------------------
