@@ -10,11 +10,28 @@ Travelers can manage create, edit, and remove trip-info while viewing security w
 ### -airport coordinates (Latitude, Longitude) in following format: [26.640120461583138, -145.12941032116983]
 ### -commute time in seconds (this is converted to minutes after collected from the BING MAPS API) 
 ### -----------------------------------------------------
+### pip freeze > requirements.txt
+### -----------------------------------------------------
 ### "flask run" in root folder to run app.py local server
 ### -----------------------------------------------------
+
 
 This requires two API keys from the following:
 
 TSA WAIT TIMES API - https://www.tsawaittimes.com/api (7 DAY EXPIRATION)
 
 BING MAPS API - https://www.microsoft.com/en-us/maps/choose-your-bing-maps-api (NO EXPIRATION)
+### -----------------------------------------------------
+For those running Linux: "sudo service postgresql start"
+### -----------------------------------------------------
+Requirements to run:
+
+Flask==2.2.2
+Flask-SQLAlchemy==3.0.2
+Flask-WTF==1.0.1
+
+psycopg2-binary==2.9.5
+SQLAlchemy==1.4.42
+
+WTForms==3.0.1
+WTForms-Components==0.10.5
