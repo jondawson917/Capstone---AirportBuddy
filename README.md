@@ -138,6 +138,8 @@ _Below is an example of how you can instruct your audience on installing and set
 <!-- USAGE EXAMPLES -->
 ## Usage
 
+#### Watch the Demo!
+
 [![Watch the video](https://img.youtube.com/vi/G0MnTOLshXE/maxresdefault.jpg)](https://www.youtube.com/embed/G0MnTOLshXE)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
