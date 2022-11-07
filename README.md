@@ -72,8 +72,8 @@ Travelers can manage create, edit, and remove trip-info while viewing security w
 
 Here's why:
 * Your time should be focused on holding your bags and navigating to the airport, not fumbling through emails and texts for trip info
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
+* Your time is valuable 
+* Your urgency shouldn't be an emergency! :smile: 
 
 
 
