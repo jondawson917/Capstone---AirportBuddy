@@ -101,6 +101,9 @@ Built with the following frameworks:
 <!-- GETTING STARTED -->
 ## Getting Started
 
+A few steps to install the packages and set the API key
+
+### Prerequisites
 
 pip3 install requirements.txt
 
