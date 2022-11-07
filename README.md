@@ -184,7 +184,7 @@ Project Link: [![Heroku][heroku-shield]][project-url]
 [SQLAlchemy-shield]: https://img.shields.io/badge/-SqlAlchemy-orange
 [WTForms-shield]: https://img.shields.io/badge/-WTForms-lightgrey
 [Heroku-shield]: https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white
-[project-url]: https://git.heroku.com/airport-buddy.git
+[project-url]: https://airport-buddy.herokuapp.com/
 [Python-url]: https://python.org
 [WTForms-url]: https://github.com/wtforms/wtforms
 [Flask-url]: https://flask.palletsprojects.com/
