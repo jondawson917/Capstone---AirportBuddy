@@ -65,7 +65,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Airport Buddy][product-screenshot]](https://git.heroku.com/airport-buddy.git)
 
 Airport Buddy provides a trip management tool for group to plan their trip to the airport. 
 Travelers can manage create, edit, and remove trip-info while viewing security wait times and commute-time to the airport.
@@ -147,7 +147,7 @@ _Below is an example of how you can instruct your audience on installing and set
 
 Your Name - [@jondawson917](https://twitter.com/jondawson917) - jondawson917@gmail.com
 
-Project Link: [![Heroku][heroku-shield]][project-url]]
+Project Link: [![Heroku][heroku-shield]][project-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
