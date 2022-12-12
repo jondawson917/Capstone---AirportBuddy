@@ -22,7 +22,7 @@ p2 = Passenger(first_name="Doug", last_name="Wright", disabled=False, trip=t1,
 state= 'CA',
 zipcode= '92121',
 city= 'San Diego',
-street= "9380 Judicial Dr", num_bags=1)
+street= "9380 Judicial Dr")
 p3 = Passenger(first_name="Finchie", last_name="McGee", disabled=True, trip=t1,
 state= 'CA',
 zipcode= '92154',
