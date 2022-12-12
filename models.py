@@ -53,7 +53,7 @@ class Trip(db.Model):
         t = self
         
         resp = requests.get(f'{TSA_BASE_URL}/{TSA_API_KEY}/{t.airport_code}').json()
-       
+        print(resp)
         return {"latitude": resp['latitude'], "longitude": resp['longitude'], "alerts": resp['faa_alerts'], "security_time": resp['rightnow']} 
 
     def get_passenger_count(self):
