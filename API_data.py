@@ -3,7 +3,7 @@ from datetime import datetime
 TSA_BASE_URL = 'https://www.tsawaittimes.com/api/airport'
 BING_BASE_URL = 'http://dev.virtualearth.net/REST/v1/Locations'
 BING_API_KEY = 'AqV4ejSx_6XyytxEkL1hNy_EFj81zdzy8mgkhf6jt69EYRAc6q9hcW3M-t8nztgJ'
-TSA_API_KEY = "YkIp9avYoBNIghdaLZAx1Ctt79FBQhMW"
+TSA_API_KEY = "piL6a1dM2lLPuIHYKkONbi1KXSe30Icd"
 BING_TEST_URL = f'http://dev.virtualearth.net/REST/v1/Locations/US/WA/98052/Redmond/1%20Microsoft%20Way?&key='
 TSA_TEST_URL = f'https://www.tsawaittimes.com/api/airports/'
 
