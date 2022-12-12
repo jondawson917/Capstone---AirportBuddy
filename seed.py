@@ -1,5 +1,5 @@
 from models import Trip, Passenger, Baggage, db
-from app import app
+
 from API_data import *
 
 db.drop_all()
