@@ -11,7 +11,7 @@ app = Flask(__name__)
 
 app.app_context().push()
 if(os.environ.get('DATABASE_URL')):
-    app.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get('DATABASE_URL')
+    app.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get('DATABASE_URL').replace("://", "ql://", 1)
 else:
     app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql:///airport_buddy'
 print(app.config['SQLALCHEMY_DATABASE_URI'])
