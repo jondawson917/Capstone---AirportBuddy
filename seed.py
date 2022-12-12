@@ -16,7 +16,7 @@ t2.security_time = t2.get_airport_info()['security_time']
 db.session.add_all([t1,t2])
 db.session.commit()
 
-p1 = Passenger(first_name="Chad", last_name="Spilner", disabled=False, trip=t1, state= 'CA', zipcode='92116', city='San Diego', street="4545 Arizona St", num_bags=1)
+p1 = Passenger(first_name="Chad", last_name="Spilner", disabled=False, trip=t1, state= 'CA', zipcode='92116', city='San Diego', street="4545 Arizona St")
 
 p2 = Passenger(first_name="Doug", last_name="Wright", disabled=False, trip=t1, 
 state= 'CA',
@@ -27,17 +27,17 @@ p3 = Passenger(first_name="Finchie", last_name="McGee", disabled=True, trip=t1,
 state= 'CA',
 zipcode= '92154',
 city= 'San Diego',
-street= "4026 Coleman Dr", num_bags=1)
+street= "4026 Coleman Dr")
 
 p5 = Passenger(first_name="Cinder", last_name="Ella", disabled=False, trip=t2, 
 state= 'CA',
 zipcode= '92128',
-city= 'San Diego', street= "18543 Caminito Pasadero", num_bags=2)
+city= 'San Diego', street= "18543 Caminito Pasadero")
 
 p6 = Passenger(first_name="Zoe", last_name="Zinfandel", disabled=False, trip=t2,
 state= 'CA',
 zipcode= '92128',
-city= 'San Diego', street= "18543 Caminito Pasadero", num_bags=1)
+city= 'San Diego', street= "18543 Caminito Pasadero")
 
 
 db.session.add_all([p1, p2, p3, p5, p6])
