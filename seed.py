@@ -9,7 +9,7 @@ db.create_all()
 
 t1 = Trip(name="Dude's Trip", takeoff_time="04/20/2023 09:00:00", airport_code="SAN", destination="Cancun", bags=3, transport_mode='transit')
 t2 = Trip(name="Girl's Trip", takeoff_time="06/09/2023 18:00:00", airport_code="LAX", destination="Jamaica", bags=4)
-print(t1.get_airport_info())
+
 t1.security_time = t1.get_airport_info()['security_time']
 t2.security_time = t2.get_airport_info()['security_time']
 
