@@ -67,7 +67,7 @@ def get_trips():
     """Retrieves a list of all trips from database"""
     trips = Trip.query.all()
 
-    return render_template('/templates/display_trips.html', trips=trips)
+    return render_template('display_trips.html', trips=trips)
 
 
 
@@ -97,7 +97,7 @@ def new_trip():
         flash(f'Trip {new_trip.name} is underWay')
         return redirect(f'/newPassenger/{new_trip.id}')
     else: 
-        return render_template('/trips/add_new_trip.html', form=form)
+        return render_template('add_new_trip.html', form=form)
 
 
 
@@ -115,7 +115,7 @@ def update_trip(id):
         db.session.add(trip)
         db.session.commit()
         return redirect("/Trips")
-    return render_template('/trips/edit_trip.html', trip=trip, form=form) 
+    return render_template('edit_trip.html', trip=trip, form=form) 
 
 
 @app.route('/Trips/<int:id>/delete', methods=["POST"])
@@ -134,7 +134,7 @@ def all_passengers():
     """Shows all passengers listed in the database"""
     passengers = Passenger.query.all()
 
-    return render_template('/passengers/display_passengers.html', passengers=passengers)
+    return render_template('display_passengers.html', passengers=passengers)
 
 
 
@@ -166,7 +166,7 @@ def new_passenger(id):
         flash(f'Passenger {new_passenger.full_name()} has been added')
         return redirect(f'/newBaggage/{new_passenger.id}')
     else:
-        return render_template('/passengers/add_new_passenger.html', form=form)
+        return render_template('add_new_passenger.html', form=form)
 
 
 
@@ -196,7 +196,7 @@ def update_passenger(id):
         flash(f'Passenger {passenger.full_name()} has been changed')
         return redirect('/Passengers')
     else:
-        return render_template('/passengers/edit_passenger.html', form=form, passenger=passenger)
+        return render_template('edit_passenger.html', form=form, passenger=passenger)
 
 @app.route('/Passenger/<int:id>/delete', methods=["POST"])
 def delete_passenger(id):
@@ -235,7 +235,7 @@ def add_baggage(id):
             
             return redirect(f'/newBaggage/{id}')            
     else:
-        return render_template('/baggage/add_bags.html', form=form, passenger=passenger, passengers=passenger_choices)
+        return render_template('add_bags.html', form=form, passenger=passenger, passengers=passenger_choices)
 
 
 
@@ -247,7 +247,7 @@ def get_bags():
     
     baggage = Baggage.query.all()
     
-    return render_template('/baggage/display_baggage.html', baggage=baggage)
+    return render_template('display_baggage.html', baggage=baggage)
 
 
 
@@ -291,7 +291,7 @@ def update_baggage(id):
 
         return redirect(f'/Baggage/{bag_id}')
    
-    return render_template('/baggage/edit_bags.html', form=form, baggage=passenger_bags)
+    return render_template('edit_bags.html', form=form, baggage=passenger_bags)
 
 @app.route('/Baggage/<int:id>/delete', methods=["POST"])
 def delete_bag(id):
