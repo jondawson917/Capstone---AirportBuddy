@@ -21,8 +21,9 @@ app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'victorias')
 app.config['DEBUG_TB_INTERCEPT_REDIRECTS'] = False
 
 connect_db(app)
+with app.app_context():
+        db.create_all()
 
-db.create_all()
 
 
 
