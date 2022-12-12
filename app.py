@@ -67,7 +67,7 @@ def get_trips():
     """Retrieves a list of all trips from database"""
     trips = Trip.query.all()
 
-    return render_template('/trips/display_trips.html', trips=trips)
+    return render_template('/templates/display_trips.html', trips=trips)
 
 
 
