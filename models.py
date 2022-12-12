@@ -1,7 +1,7 @@
 import requests
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
-from data import *
+from API_data import *
 DEFAULT_PIC = 'http://www.clipartbest.com/cliparts/9cp/oq6/9cpoq6BBi.png'
 
 db = SQLAlchemy()
