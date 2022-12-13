@@ -152,7 +152,7 @@ _Below is an example of how you can instruct your audience on installing and set
 
 Your Name - [@jondawson917](https://twitter.com/jondawson917) - jondawson917@gmail.com
 
-Project Link: [![Heroku][heroku-shield]][project-url]
+Project Link: [![Railway][Railway-shield]][project-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -183,8 +183,8 @@ Project Link: [![Heroku][heroku-shield]][project-url]
 [HTML-shield]: https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white
 [SQLAlchemy-shield]: https://img.shields.io/badge/-SqlAlchemy-orange
 [WTForms-shield]: https://img.shields.io/badge/-WTForms-lightgrey
-[Heroku-shield]: https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white
-[project-url]: https://airport-buddy.herokuapp.com/
+[Railway-shield]: https://img.shields.io/badge/Railway-0B0D0E.svg?style=for-the-badge&logo=Railway&logoColor=white
+[project-url]: https://airportbuddy.up.railway.app/
 [Python-url]: https://python.org
 [WTForms-url]: https://github.com/wtforms/wtforms
 [Flask-url]: https://flask.palletsprojects.com/
