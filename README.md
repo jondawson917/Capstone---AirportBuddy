@@ -116,7 +116,7 @@ pip3 install requirements.txt
 _Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
 
 1. Get a free TSA API Key at [https://www.tsawaittimes.com/api](https://www.tsawaittimes.com/api) (7 DAY EXPIRATION)
-2. Get a free TSA API Key at [https://www.microsoft.com/en-us/maps/choose-your-bing-maps-api](https://www.microsoft.com/en-us/maps/choose-your-bing-maps-api) (NO EXPIRATION - YOU MAY USE INCLUDED API KEY)
+2. Get a free BING MAPS API Key at [https://www.microsoft.com/en-us/maps/choose-your-bing-maps-api](https://www.microsoft.com/en-us/maps/choose-your-bing-maps-api) (NO EXPIRATION - YOU MAY USE INCLUDED API KEY)
 3. Clone the repo
    ```sh
    git clone https://github.com/jondawson917/capstone-1.git
